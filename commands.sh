@@ -19,3 +19,8 @@ git push -u origin main
 git status #whichc files are added and not added
 git log #status of logs
 git add -A #add all files
+git restore <file-name> 
+#very importqnt command to check difference between two things
+git diff
+
+git stash

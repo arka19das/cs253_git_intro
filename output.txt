@@ -1,0 +1,37 @@
+PS C:\Users\91981\Documents\New folder\courses IITK\cs253\learning_version_control> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+>git add -A
+warning: LF will be replaced by CRLF in a.sh.
+The file will have its original line endings in your working directory
+
+
+>git diff
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in commands.sh.
+The file will have its original line endings in your working directory
+diff --git a/a.sh b/a.sh
+index 3f1655c..0fc8796 100644
+--- a/a.sh
++++ b/a.sh
+@@ -19,4 +19,4 @@ PID3=$(ps -eaf | grep "bash" | grep $PIDtimeout3 | awk '{print $2}')
+
+ kill   $PPID1 $PPID2 $PPID3 $PID1 $PID2 $PID3
+ rm temp.txt
+-echo "KILLED!"
++#line addition 
+\ No newline at end of file
+diff --git a/commands.sh b/commands.sh
+index 207e323..dbad0f2 100644
+--- a/commands.sh
++++ b/commands.sh
+@@ -19,3 +19,6 @@ git push -u origin main
